@@ -20,7 +20,6 @@ alias full_backup="sudo rsync -xrlptgoEv --progress --delete / /Volumes/Malcolm_
 #****************
 #General
 #****************
-
 alias backup="rsync --archive --verbose --progress --stats --compress --rsh=/usr/bin/ssh --recursive --times --perms --links --update"
 alias src='source ~/.bashrc'
 alias beroot='sudo -s'
@@ -82,6 +81,7 @@ alias db='mysql -u root -p'
 alias rainbow="ssh harris112@rainbow.llnl.gov"
 alias patrick="ssh harris112@patrick.llnl.gov" 
 alias uvcdat='ssh harris112@uvcdat.llnl.gov'
+
 ### Personal Machines ###
 alias chico='ssh mattben@ect-unix.ecst.csuchic.edu'
 alias getnote='ssh mattben@getnote.org'

@@ -37,14 +37,17 @@ export CDPATH=.:..:$HOME/:$PROJECT/
 #-------------------------------------------
 
 cat ~/.mattben.txt
-echo '---------------------------------------------'
+echo '#---------------------------------------------'
 echo "You are logged into a `uname -s` Machine...(Version `uname -r`)"
 lsb_release -a && uname -r
+sw_vers
+echo "BashVersion: ${BASH_VERSION%.*}"
 echo "Host: `uname -n`"
 echo "Hardware: `uname -m`...."
+echo "Machine uptime:"
 uptime
 fortune
-echo '---------------------------------------------'
+echo '#---------------------------------------------'
 
 #-------------------------------------------
 case "$TERM" in
