@@ -30,7 +30,7 @@ source $BASH_COMPLETION >& /dev/null
 source $BASH_COMPLETION_DIR/* >& /dev/null
 export PATH=.:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/sw/bin:/bin:/usr/bin:/usr/sbin:/sbin:/usr/X11R6/bin:/usr/texbin
 #export PATH=.:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/sw/bin:/bin:/usr/bin:/usr/sbin:/sbin:/usr/X11R6/bin:'/Library/Application Support/VMware Fusion'
-export LANG="C"
+export LANG="en_US.UTF-8"
 
 export EDITOR='vim'
 export TERM="xterm-color"
@@ -47,7 +47,7 @@ mkdir -p ${TEMP}
 
 export PROJECT=${HOME}/Projects
 export DEVTOOLS=${HOME}/devtools
-
+export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.3
 export CDPATH=.:..:$HOME/:$PROJECT/
 
 #-------------------------------------------
@@ -55,13 +55,13 @@ cat ~/Documents/Files/mattben.txt
 echo "#-------------------------------------------"
 echo "You are logged into a `uname -s` Machine...(Version `uname -r`)"
 sw_vers
-echo "Host => `uname -n`"
+echo "BashVersion: ${BASH_VERSION%.*}"
+echo "Host: `uname -n`"
 echo "Hardware: `uname -m`...."
-echo "Machine uptime " 
+echo "Machine uptime:" 
 uptime
 fortune
 echo "#-------------------------------------------"
-
 #-------------------------------------------
 case "$TERM" in
     xterm | xterm-color)
@@ -110,3 +110,4 @@ complete -o default -o nospace -F _git_checkout gco
 complete -o default -o nospace -F _git_checkout gls
 
 export PYTHONSTARTUP=~/.pythonrc
+export PATH=/usr/local/Cellar/php/5.3.10/bin:$PATH
