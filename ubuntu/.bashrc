@@ -40,7 +40,6 @@ cat ~/.mattben.txt
 echo '#---------------------------------------------'
 echo "You are logged into a `uname -s` Machine...(Version `uname -r`)"
 lsb_release -a && uname -r
-sw_vers
 echo "BashVersion: ${BASH_VERSION%.*}"
 echo "Host: `uname -n`"
 echo "Hardware: `uname -m`...."
