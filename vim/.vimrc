@@ -3,6 +3,7 @@ set ts=2
 set et
 set showmode
 set number
+autocmd vimenter * NERDTree
 
 "imap <UP> <NOP>"
 "imap <DOWN> <NOP>"
