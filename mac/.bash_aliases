@@ -66,8 +66,9 @@ alias close='eject -t'
 #alias xterm='xterm -sb -sl 5000 -bg black -fg wheat &'
 alias xterm='xterm -sb -sl 5000 -bg grey5 -fg wheat &'
 alias findsrc="find -name '*.c' -o -name '*.h' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp' -o -name '*.py'"
-alias mysql_dev="mysql -hlocalhost -udevuser -pdevpassword"
-alias mysql_root="mysql -hlocalhost -uroot -pshaalein"
+alias mysql_dev="mysql -h localhost -u devuser -p"
+alias mysql_root="mysql -h localhost -u root -p"
+alias db='mysql -u root -p'
 
 #### CMIP5 ####
 alias down='$CATALINA_HOME/bin/shutdown.sh'
