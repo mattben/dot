@@ -24,3 +24,10 @@ ubuntu machines
 mac
 * harris112.txt
 * office.txt
+
+backgrounds
+* apple_cloude.jpg
+* background.jpg
+* blue01 - 06.jpg
+* limbo.jpg
+* matrix.jpg
