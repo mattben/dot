@@ -45,7 +45,7 @@ echo "Host: `uname -n`"
 echo "Hardware: `uname -m`...."
 echo "Machine uptime:"
 uptime
-fortune
+#fortune
 echo '#---------------------------------------------'
 
 #-------------------------------------------
