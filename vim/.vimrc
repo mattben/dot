@@ -4,6 +4,7 @@ set et
 set showmode
 set number
 set mouse=a
+set nowrap
 
 "### vimwiki ###"
 set nocompatible
