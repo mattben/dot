@@ -17,16 +17,16 @@ vim
 ascii art
 ---
 * ubuntu machines
-- .fakebuntu.txt
-- .josh.txt
-- .mattben.txt
-- .patrick.txt
-- .rainbow.txt
-- .uvcdat.txt
+  - .fakebuntu.txt
+  - .josh.txt
+  - .mattben.txt
+  - .patrick.txt
+  - .rainbow.txt
+  - .uvcdat.txt
 
 * mac
-- harris112.txt
-- office.txt
+  - harris112.txt
+  - office.txt
 
 backgrounds
 ---
