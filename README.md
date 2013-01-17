@@ -1,17 +1,20 @@
 dot
 ===
 
-My dot files
+bash
 ---
 * .bashrc
 * .bash_aliases
 * .bash_functions
+* .inputrc
+
+vim
+---
 * .vimrc
+* .vim/ (is a fork of nerdtree, with vimwiki)
+  - git clone git@github.com:mattben/nerdtree.git .vim  
 
-.vimrc/ is a fork of nerdtree, with vimwiki.
-git clone git@github.com:mattben/nerdtree.git  
-
-ascii art files
+ascii art
 ---
 ubuntu machines
 * .fakebuntu.txt
@@ -26,8 +29,14 @@ mac
 * office.txt
 
 backgrounds
+---
 * apple_cloude.jpg
 * background.jpg
 * blue01 - 06.jpg
 * limbo.jpg
 * matrix.jpg
+
+bookmarks
+---
+* Bookmarks.plist (no iCloud)
+
