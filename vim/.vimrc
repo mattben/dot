@@ -5,6 +5,7 @@ set showmode
 set number
 set mouse=a
 set nowrap
+set ft=javascript
 
 "### vimwiki ###"
 set nocompatible
