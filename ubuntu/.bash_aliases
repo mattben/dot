@@ -73,6 +73,7 @@ alias findsrc="find -name '*.c' -o -name '*.h' -o -name '*.cc' -o -name '*.hpp' 
 alias mysql_dev="mysql -hlocalhost -udevuser -pdevpassword"
 alias mysql_root="mysql -hlocalhost -uroot -pshaalein"
 alias db='mysql -u root -p'
+alias update='/home/mattben/Projects/dot/bash/gitPull.sh'
 
 #-----------------------
 #	Machine/Host Aliases
