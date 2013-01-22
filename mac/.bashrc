@@ -104,6 +104,7 @@ export JAR_PATH=$HOME/classes/jars
 #-----------------------------
 source ~/.bash_aliases
 source ~/.bash_functions
+source ~/.xinitrc
 #-----------------------------
 complete -o default -o nospace -F _git_checkout gci
 complete -o default -o nospace -F _git_checkout gco
