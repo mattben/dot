@@ -59,7 +59,6 @@ alias whom='who | sort | more'
 alias wsm='w | sort | more '
 alias emacs='emacs -bg black -fg wheat '
 alias e='/usr/bin/emacs -nw'
-#alias mvim='/Users/harris112/mvim'
 #alias vim=mvim
 #alias vi=mvim
 alias close='eject -t'
@@ -69,6 +68,7 @@ alias findsrc="find -name '*.c' -o -name '*.h' -o -name '*.cc' -o -name '*.hpp' 
 alias mysql_dev="mysql -h localhost -u devuser -p"
 alias mysql_root="mysql -h localhost -u root -p"
 alias db='mysql -u root -p'
+alias brewing='/Users/harris112/Projects/mattben/dot/bash/brewUpgrade.sh'
 
 #### CMIP5 ####
 alias down='$CATALINA_HOME/bin/shutdown.sh'
