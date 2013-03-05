@@ -59,8 +59,9 @@ alias whom='who | sort | more'
 alias wsm='w | sort | more '
 alias emacs='emacs -bg black -fg wheat '
 alias e='/usr/bin/emacs -nw'
-#alias vim=mvim
-#alias vi=mvim
+alias mvim='/Users/harris112/Applications/mvim'
+alias vim=mvim
+alias vi=vim
 alias close='eject -t'
 #alias xterm='xterm -sb -sl 5000 -bg black -fg wheat &'
 alias xterm='xterm -sb -sl 5000 -bg grey5 -fg wheat &'
@@ -68,26 +69,27 @@ alias findsrc="find -name '*.c' -o -name '*.h' -o -name '*.cc' -o -name '*.hpp' 
 alias mysql_dev="mysql -h localhost -u devuser -p"
 alias mysql_root="mysql -h localhost -u root -p"
 alias db='mysql -u root -p'
-alias brewing='/Users/harris112/Projects/mattben/dot/bash/brewUpgrade.sh'
 
 #### CMIP5 ####
 alias down='$CATALINA_HOME/bin/shutdown.sh'
 alias up='$CATALINA_HOME/bin/startup.sh'
 alias go='cd /usr/local/Cellar/tomcat/7.0.29/libexec/webapps'
-alias upsql='/usr/local/Cellar/mysql/5.5.25a/bin/mysql.server start'
+alias upsql='/usr/local/Cellar/mysql/5.5.29/bin/mysql.server start'
 
 #### ESGF ####
 alias esgf='cd /Users/harris112/Projects/esgf-web-fe'
 alias cleanr='ant clean_all'
 alias maker='ant make_dist'
-alias send='scp dist/esgf-web-fe.war root@patrick.llnl.gov:/usr/local/tomcat/webapps/'
+alias send='scp /Users/harris112/Projects/esgf-web-fe/dist/esgf-web-fe.war root@patrick.llnl.gov:/usr/local/tomcat/webapps/'
 alias steps='cat /Users/harris112/Documents/Files/steps.txt'
 alias meeting='cat /Users/harris112/Documents/Files/goToMeeting.txt'
-
+alias sendjar='scp /Users/harris112/Projects/esgf-security/dist/esgf-security-2.2.5.jar root@patrick.llnl.gov:/usr/local/tomcat/webapps/esgf-web-fe/WEB-INF/lib/esgf-security-2.2.5.jar'
+alias cpjar='cp /Users/harris112/Projects/esgf-security/dist/esgf-security-2.2.5.jar /Users/harris112/Projects/esgf-web-fe/lib/fetched/base/esgf-security-2.2.5.jar'
 
 #### Lawrence Livermore National Labs (LLNL) ####
 alias patrick="ssh harris112@patrick.llnl.gov" 
 alias rainbow="ssh harris112@rainbow.llnl.gov"
+alias rainbow1="ssh harris112@rainbow1.llnl.gov"
 alias office='ssh harris112@b170-9124484.llnl.gov'
 alias uvcdat='ssh harris112@uvcdat.llnl.gov'
 

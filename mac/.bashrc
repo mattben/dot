@@ -33,6 +33,7 @@ export PATH=.:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/sw/bin:/b
 export LANG="en_US.UTF-8"
 
 export EDITOR='vim'
+export VIM_APP_DIR=/usr/local/Cellar/macvim/7.3-66
 export TERM="xterm-color"
 export CLICOLOR="true"
 #export LSCOLORS=exfxcxdxbxegedabagacad
@@ -104,7 +105,6 @@ export JAR_PATH=$HOME/classes/jars
 #-----------------------------
 source ~/.bash_aliases
 source ~/.bash_functions
-source ~/.xinitrc
 #-----------------------------
 complete -o default -o nospace -F _git_checkout gci
 complete -o default -o nospace -F _git_checkout gco
@@ -112,3 +112,4 @@ complete -o default -o nospace -F _git_checkout gls
 
 export PYTHONSTARTUP=~/.pythonrc
 export PATH=/usr/local/Cellar/php/5.3.10/bin:$PATH
+eval "$(rbenv init -)"
