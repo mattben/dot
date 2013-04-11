@@ -9,7 +9,7 @@ echo -e "\nPulling down latest for $START_HERE\n";
 for d in $(find . -maxdepth 1 -mindepth 1 -type d); do
   echo -e "$d";
   cd $d;
-  git status;
+  git remote -v;
   echo "************************************************************";
   cd $START_HERE;
 done

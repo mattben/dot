@@ -1,6 +1,6 @@
 #!/bin/bash
 
-START_HERE="." # Path -> /home/mattben/Projects/
+START_HERE="/home/mharris/Projects/";
 COUNT=0;
 cd $START_HERE;
 
