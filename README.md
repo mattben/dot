@@ -1,18 +1,30 @@
 dot
 ===
 
-bash
+Shell
 ---
-* .bashrc
-* .bash_aliases
-* .bash_functions
-* .inputrc
+* bash (ubuntu, mac, raspberryPi)
+  - .bashrc
+  - .bash_aliases
+  - .bash_functions
+  - .inputrc
 
-vim
----
-* .vimrc
-* .vim/ (is a fork of nerdtree, with vimwiki)
-  - git clone git@github.com:mattben/nerdtree.git .vim  
+* zsh
+  - .zshrc
+  - jreese.zsh-theme
+
+* git
+  - zcount.sh
+  - zcheck.sh
+  - zpull.sh
+  - remote.sh
+
+* vim
+  - .vimrc
+  - git clone git@github.com:mattben/nerdtree.git .vim  (nerdtree + vimwiki)
+
+* python
+  - startup_mailer.py
 
 ascii art
 ---
