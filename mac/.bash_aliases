@@ -1,73 +1,22 @@
 #!/bin/bash
 
 #****************
-#Java Related...
-#****************
-alias axis_cp="source $HOME/bin/axis_classpath"
-alias kawa="java kawa.repl"
-alias beanshell="java bsh.Interpreter"
-alias bsh="java bsh.Interpreter"
-#alias javac="javac -d ${CLASS_ROOT}"
-alias compile="javac -nowarn -d ${CLASS_ROOT}"
-alias jikes="jikes -nowarn -d ${CLASS_ROOT}"
-alias jruby-console="java -jar $JAR_PATH/jruby-console.jar"
-
-#****************
-#maintenance aliases
-#****************
-alias full_backup="sudo rsync -xrlptgoEv --progress --delete / /Volumes/Malcolm_HD_Backup"
-
-#****************
 #General
 #****************
-alias backup="rsync --archive --verbose --progress --stats --compress --rsh=/usr/bin/ssh --recursive --times --perms --links --update"
 alias src='source ~/.bashrc'
 alias beroot='sudo -s'
 alias c=clear
-alias dirs='dirs -v'
-alias vt='set term=vt100'
-alias NODISP='unsetenv DISPLAY'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias .='echo $cwd'
+alias .='echo $pwd'
 alias ll='ls -l'
-alias dir=ll
-alias lst='ls -FAlt | less'
-alias lr='ls -rt'
-alias lrt='ls -lrth'
-alias lrtl='ls -lrth | less'
-alias lart='ls -larth'
-alias lartl='ls -larth | less'
 alias la='ls -la'
-alias lf='ls -Fg'
-alias lc='ls -Cg'
-alias a=alias
+alias a='ls -a'
 alias h=history
-alias hist=history
-alias pd=pushd
-alias push=pushd
-alias pop=popd
-alias md=mkdir
-alias rd=rmdir
-alias cls=clear
-alias c=cls
-alias screen='screen -R'
-alias screen_here='screen -d'
-alias screen_HERE='screen -D'
-alias pss='ps auxw | grep cue'
-alias whom='who | sort | more'
-alias wsm='w | sort | more '
-alias emacs='emacs -bg black -fg wheat '
-alias e='/usr/bin/emacs -nw'
+alias c=clear
 alias mvim='/Users/harris112/Applications/mvim'
 alias vim=mvim
 alias vi=vim
-alias close='eject -t'
-#alias xterm='xterm -sb -sl 5000 -bg black -fg wheat &'
-alias xterm='xterm -sb -sl 5000 -bg grey5 -fg wheat &'
-alias findsrc="find -name '*.c' -o -name '*.h' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp' -o -name '*.py'"
-alias mysql_dev="mysql -h localhost -u devuser -p"
-alias mysql_root="mysql -h localhost -u root -p"
 alias db='mysql -u root -p'
 
 #### CMIP5 ####
@@ -83,23 +32,20 @@ alias maker='ant make_dist'
 alias send='scp /Users/harris112/Projects/esgf-web-fe/dist/esgf-web-fe.war root@patrick.llnl.gov:/usr/local/tomcat/webapps/'
 alias steps='cat /Users/harris112/Documents/Files/steps.txt'
 alias meeting='cat /Users/harris112/Documents/Files/goToMeeting.txt'
-alias sendjar='scp /Users/harris112/Projects/esgf-security/dist/esgf-security-2.2.5.jar root@patrick.llnl.gov:/usr/local/tomcat/webapps/esgf-web-fe/WEB-INF/lib/esgf-security-2.2.5.jar'
-alias cpjar='cp /Users/harris112/Projects/esgf-security/dist/esgf-security-2.2.5.jar /Users/harris112/Projects/esgf-web-fe/lib/fetched/base/esgf-security-2.2.5.jar'
+alias sendjar='scp /Users/harris112/Projects/esgf-security/dist/esgf-security-2.3.6.jar root@patrick.llnl.gov:/usr/local/tomcat/webapps/esgf-web-fe/WEB-INF/lib/esgf-security-2.3.6.jar'
+alias cpjar='cp /Users/harris112/Projects/esgf-security/dist/esgf-security-2.3.6.jar /Users/harris112/Projects/esgf-web-fe/lib/fetched/base/esgf-security-2.3.6.jar'
 
 #### Lawrence Livermore National Labs (LLNL) ####
 alias patrick="ssh harris112@patrick.llnl.gov" 
 alias rainbow="ssh harris112@rainbow.llnl.gov"
 alias rainbow1="ssh harris112@rainbow1.llnl.gov"
-alias office='ssh harris112@b170-9124484.llnl.gov'
+alias pro='ssh harris112@b170-9124484.llnl.gov'
+alias imac='ssh harris112@harris112md.llnl.gov'
 alias uvcdat='ssh harris112@uvcdat.llnl.gov'
-
-#--- Off Site Machines ---
-alias mattben='mosh mattben@mattben.info'
-alias school='ssh mattben@ect-unix.ecst.csuchico.edu'
-alias josh='mosh mattben@bttn.co'
-
-# --- Mini Cluster ---
-
+alias 11='ssh harris112@pcmdi11.llnl.gov'
+alias pcmdi11=11;
+alias 6='ssh harris112@pcmdi6.llnl.gov'
+alias pcmdi6=6;
 
 #### GIT ####
 alias gs='git status'
@@ -118,4 +64,4 @@ alias ss="svn status"
 
 ### forever alone ####
 alias hi='echo Hello Sir.'
-alias me='cat ~/Documents/Files/harris112.txt'
+alias me='cat ~/Documents/Files/mattben.txt'
