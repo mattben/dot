@@ -51,4 +51,9 @@ backgrounds
 bookmarks
 ---
 * Bookmarks.plist (no iCloud)
+* 
+
+usefull commands
+---
+export GIT_SSL_NO_VERIFY=1
 
