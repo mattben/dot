@@ -1,12 +1,6 @@
 #!/bin/bash
 [ -z "$PS1" ] && return
 
-shopt -s extglob
-shopt -s dotglob
-shopt -s cdspell
-shopt -s histappend
-shopt -s checkwinsize
-
 export IGNOREEOF=1
 
 set show-all-if-ambiguous on                                                    
@@ -27,12 +21,6 @@ export TERM="xterm-color"
 export CLICOLOR="true"
 export LSCOLORS=dxgxcxdxbxcgcdabagacad
 export GREP_OPTIONS='--color=auto' GREP_COLOR='00;38;5;226'
-export TEMP="/tmp/`whoami`"
-export TMP=${TEMP}
-mkdir -p ${TEMP}
-export PROJECT=${HOME}/projects
-export DEVTOOLS=${HOME}/devtools
-export CDPATH=.:..:$HOME/:$PROJECT/
 
 #-------------------------------------------
 
@@ -62,28 +50,9 @@ case "$TERM" in
 esac
 #-----------------------------
 
-export ESGF_SITE_ROOT=$PROJECT/esgf-site
-
-#System-wide resources....
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
-export ANT_HOME=/usr/share/ant
-export M2_HOME=/usr/local/maven
-
-#Account scope resources
-export CATALINA_HOME=$DEVTOOLS/tomcat
-export TOMCAT_HOME=$CATALINA_HOME
-export AXIS_HOME=$DEVTOOLS/axis
-export JAXB_HOME=$DEVTOOLS/jwsdp/jaxb
-export GROOVY_HOME=$DEVTOOLS/groovy
-export JRUBY_HOME=$DEVTOOLS/jruby
-export PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$M2_HOME/bin:$GROOVY_HOME/bin:$JRUBY_HOME/bin
-export CLASS_ROOT=$HOME/classes
-export JAR_PATH=$HOME/classes/jars
-#export CLASSPATH=.:$CLASS_ROOT:$(find $JAR_PATH | xargs | perl -pe 's/ /:/g')
-
-#-----------------------------
 source ~/.bash_aliases
 source ~/.bash_functions
+
 #-----------------------------
 complete -o default -o nospace -F _git_checkout gci
 complete -o default -o nospace -F _git_checkout gco

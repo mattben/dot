@@ -1,5 +1,4 @@
 #!/bin/bash
-
 [ -z "$PS1" ] && return
 
 shopt -s extglob
@@ -17,15 +16,11 @@ export HISTCONTROL=ignoredups
 export HISTSIZE=1000000
 export HISTFILESIZE=1000000
 export TMOUT=0
-
 export BASH_COMPLETION=/usr/local/Cellar/bash-completion/1.3/etc/bash_completion >& /dev/null
 export BASH_COMPLETION_DIR=/usr/local/Cellar/bash-completion/1.3/etc/bash_completion.d >& /dev/null
-
 source $BASH_COMPLETION >& /dev/null
 source $BASH_COMPLETION_DIR/* >& /dev/null
-
 export PATH=.:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/sw/bin:/bin:/usr/bin:/usr/sbin:/sbin:/usr/X11R6/bin:/usr/texbin
-
 export LANG="en_US.UTF-8"
 export EDITOR='vim'
 export VIM_APP_DIR=/usr/local/Cellar/macvim/7.3-66
@@ -33,12 +28,7 @@ export TERM="xterm-color"
 export CLICOLOR="true"
 export LSCOLORS=dxgxcxdxbxcgcdabagacad
 export GREP_OPTIONS='--color=auto' GREP_COLOR='00;38;5;226'
-export TEMP="/tmp/`whoami`"
-export TMP=${TEMP}
-mkdir -p ${TEMP}
-export PROJECT=${HOME}/Projects
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r21.0.1
-export CDPATH=.:..:$HOME/:$PROJECT/
 
 #-------------------------------------------
 cat ~/Documents/Files/mattben.txt

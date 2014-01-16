@@ -18,7 +18,9 @@ alias a=alias
 alias h=history
 alias vi='vim'
 alias db='mysql -u root -p'
-alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+alias updist='sudo apt-get dist-upgrade'
 alias size='df -h'
 
 #### GIT ####
@@ -51,5 +53,5 @@ alias macbook='ssh harris112@harris112ml.llnl.gov'
 
 ### Personal Machines ###
 alias chico='ssh mattben@ect-unix.ecst.csuchic.edu'
-alias getnote='ssh mattben@getnote.org'
+alias pi='ssh mattben@getnote.org'
 
