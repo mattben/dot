@@ -51,7 +51,6 @@ esac
 #-----------------------------
 
 source ~/.bash_aliases
-source ~/.bash_functions
 
 #-----------------------------
 complete -o default -o nospace -F _git_checkout gci
