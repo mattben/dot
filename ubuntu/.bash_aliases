@@ -49,6 +49,7 @@ alias pro='ssh harris112@b170-9124484.llnl.gov'
 
 ## LLNL Green ##
 alias esgcet='ssh harris112@esgcet.llnl.gov'
+alias helene='ssh harris112@helene.llnl.gov'
 alias kitt='ssh harris112@kitt.llnl.gov'
 alias pcmdi6='ssh harris112@pcmdi6.llnl.gov'
 alias pcmdi11='ssh harris112@pcmdi11.llnl.gov'
