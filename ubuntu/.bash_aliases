@@ -40,16 +40,24 @@ alias ss='svn status'
 #-----------------------
 #	Machine/Host Aliases
 #-----------------------
-### LLNL Machines ###
-alias rainbow='ssh harris112@rainbow.llnl.gov'
-alias rainbow1='ssh harris112@rainbow1.llnl.gov'
-alias uvcdat='ssh harris112@uvcdat.llnl.gov'
-alias pcmdi9='ssh harris112@pcmdi9.llnl.gov'
-alias pcmdi6='ssh harris112@pcmdi6.llnl.gov'
+## LLNL Yellow ##
+alias aims1='ssh harris112@aims1.llnl.gov'
+alias aims2='ssh harris112@aims2.llnl.gov'
+alias imac='ssh harris112@harris112md.llnl.gov'
+alias patrick="ssh harris112@patrick.llnl.gov" 
+alias pro='ssh harris112@b170-9124484.llnl.gov'
+
+## LLNL Green ##
+alias esgcet='ssh harris112@esgcet.llnl.gov'
 alias kitt='ssh harris112@kitt.llnl.gov'
-alias patrick='ssh harris112@patrick.llnl.gov' 
-alias imac='shh harris112@harris112md.llnl.gov'
-alias macbook='ssh harris112@harris112ml.llnl.gov'
+alias pcmdi6='ssh harris112@pcmdi6.llnl.gov'
+alias pcmdi11='ssh harris112@pcmdi11.llnl.gov'
+alias rainbow="ssh harris112@rainbow.llnl.gov"
+alias rainbow1="ssh harris112@rainbow1.llnl.gov"
+alias uvcdat='ssh harris112@uv-cdat.llnl.gov'
+
+## ORNL Test ##
+alias acme='ssh mattben@acmetest.ornl.gov'
 
 ### Personal Machines ###
 alias chico='ssh mattben@ect-unix.ecst.csuchic.edu'
