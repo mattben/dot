@@ -1,6 +1,6 @@
 #!/bin/bash
 
-START_HERE="/home/mharris/Projects/";
+START_HERE="/home/users/Projects/";
 
 cd $START_HERE;
 
@@ -10,10 +10,6 @@ for d in $(find . -maxdepth 1 -mindepth 1 -type d); do
   echo -e "$d";
   cd $d;
   git pull;
-  git pull upstream master;
-  git add -A;
-  git commit -am "AUTO: updating repo";
-  git push;
   echo "************************************************************";
   cd $START_HERE;
 done
