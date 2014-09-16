@@ -20,7 +20,7 @@ export BASH_COMPLETION=/usr/local/Cellar/bash-completion/1.3/etc/bash_completion
 export BASH_COMPLETION_DIR=/usr/local/Cellar/bash-completion/1.3/etc/bash_completion.d >& /dev/null
 source $BASH_COMPLETION >& /dev/null
 source $BASH_COMPLETION_DIR/* >& /dev/null
-export PATH=.:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/sw/bin:/bin:/usr/bin:/usr/sbin:/sbin:/usr/X11R6/bin:/usr/texbin
+export PATH=.:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/sw/bin:/bin:/usr/bin:/usr/sbin:/sbin:/usr/X11R6/bin:/usr/texbin:/usr/local/opt/ruby/bin
 export LANG="en_US.UTF-8"
 export EDITOR='vim'
 export VIM_APP_DIR=/usr/local/Cellar/macvim/7.3-66
@@ -29,6 +29,11 @@ export CLICOLOR="true"
 export LSCOLORS=dxgxcxdxbxcgcdabagacad
 export GREP_OPTIONS='--color=auto' GREP_COLOR='00;38;5;226'
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r21.0.1
+
+####### Home Brew
+alias fortune='/usr/local/Cellar/fortune/9708/bin/fortune'
+#LDFLAGS:  -L/usr/local/opt/qt5/lib
+#CPPFLAGS: -I/usr/local/opt/qt5/include
 
 #-------------------------------------------
 cat ~/Documents/Files/mattben.txt
@@ -75,4 +80,4 @@ complete -o default -o nospace -F _git_checkout gls
 
 export PYTHONSTARTUP=~/.pythonrc
 export PATH=/usr/local/Cellar/php/5.3.10/bin:$PATH
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)/"
