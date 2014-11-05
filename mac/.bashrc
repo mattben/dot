@@ -28,7 +28,6 @@ export TERM="xterm-color"
 export CLICOLOR="true"
 export LSCOLORS=dxgxcxdxbxcgcdabagacad
 export GREP_OPTIONS='--color=auto' GREP_COLOR='00;38;5;226'
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r21.0.1
 
 ####### Home Brew
 alias fortune='/usr/local/Cellar/fortune/9708/bin/fortune'
@@ -59,17 +58,6 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007";histor
 	;;
 esac
 
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
-export ANT_HOME=/usr/local/ant
-export M2_HOME=/usr/local/maven
-
-export CATALINA_HOME=/usr/local/Cellar/tomcat/7.0.29/libexec
-export TOMCAT_HOME=$CATALINA_HOME
-
-export PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$M2_HOME/bin
-
-export CLASS_ROOT=$HOME/classes
-export JAR_PATH=$HOME/classes/jars
 
 #-----------------------------
 source ~/.bash_aliases
@@ -77,7 +65,3 @@ source ~/.bash_aliases
 complete -o default -o nospace -F _git_checkout gci
 complete -o default -o nospace -F _git_checkout gco
 complete -o default -o nospace -F _git_checkout gls
-
-export PYTHONSTARTUP=~/.pythonrc
-export PATH=/usr/local/Cellar/php/5.3.10/bin:$PATH
-#eval "$(rbenv init -)/"
