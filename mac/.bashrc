@@ -29,7 +29,7 @@ export CLICOLOR="true"
 export LSCOLORS=dxgxcxdxbxcgcdabagacad
 export GREP_OPTIONS='--color=auto' GREP_COLOR='00;38;5;226'
 export GIT_SSL_NO_VERIFY=1
-export HOMEBREW_GITHUB_API_TOKEN='e63e3b3639c91736ca36a51ef17ddcab7d00c07e'
+export HOMEBREW_GITHUB_API_TOKEN=''
 
 #export CHROME_DRIVER=/usr/local/bin/chromedriver
 export SELENIUM_SERVER_JAR=/usr/local/bin/selenium-server-standalone-2.46.0.jar
