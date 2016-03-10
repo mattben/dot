@@ -1,0 +1,7 @@
+alias pip2='/usr/local/bin/pip2'
+alias pip3='/usr/local/bin/pip3'
+#alias python='/usr/local/bin/python'
+alias python2='/usr/local/bin/python2'
+alias python3='/usr/local/bin/python3'
+#alias virtualenv2='/usr/local/bin/'
+#alias virtualenv3='/usr/local/bin'
