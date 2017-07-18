@@ -17,10 +17,6 @@ source $BASH_COMPLETION_DIR/* >& /dev/null
 export PATH=.:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/sw/bin:/bin:/usr/bin:/usr/sbin:/sbin:/usr/X11R6/bin:/usr/texbin:/usr/games
 export LANG="en_US.UTF-8"
 export EDITOR='vim'
-export TERM="xterm-color"
-export CLICOLOR="true"
-export LSCOLORS=dxgxcxdxbxcgcdabagacad
-export GREP_OPTIONS='--color=auto' GREP_COLOR='00;38;5;226'
 
 #-------------------------------------------
 

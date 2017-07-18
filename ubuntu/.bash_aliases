@@ -8,9 +8,6 @@ alias src='source ~/.bashrc'
 alias c=clear
 alias dirs='dirs -v'
 alias .='echo $cwd'
-alias ls='ls --color=auto'
-alias dir='dir --color=auto'
-alias grep='grep --color=auto'
 alias ll='ls -l'
 alias la='ls -al'
 alias al='ls -A'
@@ -40,27 +37,15 @@ alias ss='svn status'
 #-----------------------
 #	Machine/Host Aliases
 #-----------------------
-## LLNL Yellow ##
+## LLNL Green ##
 alias aims1='ssh harris112@aims1.llnl.gov'
 alias aims2='ssh harris112@aims2.llnl.gov'
-alias imac='ssh harris112@harris112md.llnl.gov'
-alias patrick="ssh harris112@patrick.llnl.gov" 
-alias pro='ssh harris112@b170-9124484.llnl.gov'
-
-## LLNL Green ##
-alias esgcet='ssh harris112@esgcet.llnl.gov'
-alias helene='ssh harris112@helene.llnl.gov'
-alias kitt='ssh harris112@kitt.llnl.gov'
+alias aims3='ssh harris112@aims3.llnl.gov'
+alias aims4='ssh harris112@aims4.llnl.gov'
 alias pcmdi6='ssh harris112@pcmdi6.llnl.gov'
+alias pcmdi9='ssh harris112@pcmdi9.llnl.gov'
 alias pcmdi11='ssh harris112@pcmdi11.llnl.gov'
+alias pcmdiweb='ssh harris112@pcmdiweb.llnl.gov'
 alias rainbow="ssh harris112@rainbow.llnl.gov"
 alias rainbow1="ssh harris112@rainbow1.llnl.gov"
-alias uvcdat='ssh harris112@uv-cdat.llnl.gov'
-
-## ORNL Test ##
-alias acme='ssh mattben@acmetest.ornl.gov'
-
-### Personal Machines ###
-alias chico='ssh mattben@ect-unix.ecst.csuchic.edu'
-alias pi='ssh mattben@getnote.org'
 
